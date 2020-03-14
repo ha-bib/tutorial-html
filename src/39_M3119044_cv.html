@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html><head>    <link href="favicon.ico" rel="shortcut icon" type="image/ico"/></head>
+<title>Curiculum Vitae</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="habib.style.css">
+<body>
+
+<div class="sidebar bar-block card animate-left" style="display:block;" id="mySidebar">
+  <button class="bar-item button large"
+  onclick="habib_close()">Daftar Isi &times;</button>
+  <a href="../index.html" class="bar-item button border-bottom">Halaman Utama</a>
+ 
+
+</div>
+
+<div id="main">
+
+<div class="teal">
+  <button id="openNav" class="button teal xlarge" onclick="habib_open()">&#9776;</button>
+  <div class="container">
+    <h1>Pengisian Curiculum Vitae</h1>
+  </div>
+</div>
+ 
+<div class="container">
+ <font  color="#009900" >
+
+<h2><strong>Isi formulir di bawah ini</strong></h2>   </font>
+ 
+<!--  | | UPLOAD FOTO | TOMBOL | RADIO 10 |   | LIST BOX 10 -->
+ 
+ 
+ <form method="post" action="#">
+  Nama depan :
+  <br/>
+    <input type="text" name="firstname"  class="input border animate-input" style="width:30%" placeholder="Nama depan">
+  <br/>
+  Nama belakang :
+  <br/>
+    <input type="text" name="lastname"class="input border animate-input" style="width:30%" placeholder="Nama belakang">
+  <br/>
+  Tanggal lahir:
+  <br/>
+    <input type="date" name="date" class="input border  " style="width:30%"  >
+  <br/>
+  Jenis kelamin :
+  <br/>
+  
+<label class="kontener" style="display: inline-block;">Laki-laki     
+  <input type="radio" name="radio">
+  <span class="checkmarkradio"></span>
+</label>
+
+<label class="kontener"> 
+</label>
+
+<label class="kontener">Perempuan 
+  <input type="radio" name="radio">
+  <span class="checkmarkradio"></span>
+</label>
+
+<br/>
+   Agama :
+  <br/>
+  <select name="select"  style="width:30%" >
+    <option value="i">Islam</option>
+    <option value="bi">Bukan Islam</option>
+   </select>
+
+<br/>
+  E-Mail :
+  <br/>
+    <input type="text" name="e-mail"class="input border animate-input" style="width:30%" placeholder="E-Mail">
+  <br/>
+  Kata Sandi E-Mail :
+  <br/>
+    <input type="password" name="lastname"class="input border animate-input" style="width:30%">
+  <br/>  <br/>
+  Hobi :
+  <br/><br/>
+    <label class="kontener2" style="display: inline-block;">Musik ‏‏‎ ‏‏‎ ‏‏‎ ‏‏‎ ‏‏‎ ‏‏‎ ‏‏‎
+      <input type="checkbox" name="hobi" value="dw" >
+      <span class="checkboxmark"></span>
+    </label>
+     <label class="kontener2" style="display: inline-block;">Olahraga ‏‏‎ ‏‏‎ ‏‏‎ ‏‏‎
+      <input type="checkbox" name="hobi" value="dw" >
+      <span class="checkboxmark"></span>
+    </label>
+     <label class="kontener2" style="display: inline-block;">Seni ‏‏‎ ‏‏‎ ‏‏‎ ‏‏‎
+      <input type="checkbox" name="hobi" value="dw" >
+      <span class="checkboxmark"></span>
+    </label>
+    <br/>
+     <label class="kontener2" style="display: inline-block;">Videografi ‏‏‎
+      <input type="checkbox" name="hobi" value="dw" >
+      <span class="checkboxmark"></span>
+    </label>
+     <label class="kontener2" style="display: inline-block;">Desain ‏‏‎ ‏‏‎ ‏‏‎ ‏‏‎ ‏‏‎ ‏‏‎ ‏‏‎
+      <input type="checkbox" name="hobi" value="dw" >
+      <span class="checkboxmark"></span>
+    </label>
+     <label class="kontener2" style="display: inline-block;">Fotografi ‏‏‎ ‏‏‎ ‏‏‎ ‏‏‎
+      <input type="checkbox" name="hobi" value="dw" >
+      <span class="checkboxmark"></span>
+    </label>
+      <br/>
+     <label class="kontener2" style="display: inline-block;">Coding ‏‏‎ ‏‏‎ ‏‏‎  ‏‏‎ ‏‏‎
+      <input type="checkbox" name="hobi" value="dw" >
+      <span class="checkboxmark"></span>
+    </label>
+    <label class="kontener2" style="display: inline-block;">Membaca ‏‏‎ ‏‏‎ ‏‏‎ ‏‏‎
+      <input type="checkbox" name="hobi" value="dw" >
+      <span class="checkboxmark"></span>
+    </label>
+    <label class="kontener2" style="display: inline-block;">Film ‏‏‎ ‏‏‎ ‏‏‎ ‏‏‎
+      <input type="checkbox" name="hobi" value="dw" >
+      <span class="checkboxmark"></span>
+    </label>
+     <br/>
+    <label class="kontener2" style="display: inline-block;">Makan ‏‏‎ ‏‏‎  ‏‏‎ ‏‏‎ ‏‏‎ ‏‏‎
+      <input type="checkbox" name="hobi" value="dw" >
+      <span class="checkboxmark"></span>
+    </label>
+    <label class="kontener2" style="display: inline-block;">Stalking ‏‏‎ ‏‏‎ ‏‏‎ ‏‏‎ ‏‏‎ ‏‏‎
+      <input type="checkbox" name="hobi" value="dw" >
+      <span class="checkboxmark"></span>
+    </label>
+    <label class="kontener2" style="display: inline-block;">Ghibah ‏‏‎ ‏‏‎‏‎ ‏‏‎ ‏‏‎ ‏‏‎
+      <input type="checkbox" name="hobi" value="dw" >
+      <span class="checkboxmark"></span>
+    </label>
+  <br/>
+  Riwayat pendidikan :
+    <br/>
+    
+  <label class="kontener" style="display: inline-block;">Laki-laki     
+    <input type="radio" name="radio">
+    <span class="checkmarkradio"></span>
+  </label>
+   <label class="kontener">Perempuan 
+    <input type="radio" name="radio">
+    <span class="checkmarkradio"></span>
+  </label>
+
+
+
+
+  <input type="submit" value="Daftar" class="myButton">
+</form>
+ 
+
+<h2><font size="6" color="#009900" align="Left"><strong>Source Code</strong>  </font></h2>
+
+<!--WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! -->
+
+<textarea cols="1000" style="max-width:100%;" rows="4" readonly color="#008000">
+ 
+
+</textarea>
+<!--WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! -->
+
+<h2><font size="6" color="#009900" align="justify"><strong>Kesimpulan</strong></h2>  </font>
+
+
+
+<p align="justify">
+Komponen text box dibuat dengan menuliskan tag &lt;input type="text" name="namakomponen" /&gt; . Dengan atribut name diisi dengan nama komponen yang sesuai dengan data isian. Nama komponen mutlak dituliskan karena akan digunakan pada script pengolah data. </p>
+
+<p align="center"><a href="../index.html" align="center" class="myButton"> Menu Utama</a>   </p>
+<div class="teal">
+  <div class="container">
+    <h1>Habib - M3119044</h1>
+  </div>
+</div>
+
+
+<style>
+  /* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #dbdbdb; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #009000; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #00b300; 
+}
+.myButton {
+  box-shadow:inset -2px -3px 0px -41px #00bd00;
+  background-color:#009000;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:26px;
+  font-weight:bold;
+  padding: 12px 1px;
+  text-decoration:none;
+  text-shadow:1px 1px 1px 1px #21d904;
+    position: static;
+      width: 240px;
+    height: 60px; border-radius:  ;   border: 256 96px; 
+
+  border: 0px solid black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 15px;
+  margin-left: 0px;
+  
+}
+.myButton:hover {
+  background-color:#00b800;
+}
+.myButton:active {
+  position:relative;
+  top:12px;
+}
+</style>
+<script>
+
+function habib_open() {
+  document.getElementById("main").style.marginLeft = "19%";
+  document.getElementById("mySidebar").style.width = "19%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function habib_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+
+</div>
+
+</body>
+</html>

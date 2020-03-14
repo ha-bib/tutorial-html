@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html><head>    <link href="favicon.ico" rel="shortcut icon" type="image/ico"/></head>
+<title>Membuat Form - Check Box</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="habib.style.css">
+<link rel="stylesheet" href="font.css">
+<body>
+
+<div class="sidebar bar-block card animate-left" style="display:block;" id="mySidebar">
+  <button class="bar-item button large"
+  onclick="habib_close()">Daftar Isi &times;</button>
+  <a href="../index.html" class="bar-item button border-bottom">Halaman Utama</a>
+ <a href="01_M3119044_heading.html" class="bar-item button border-bottom">Heading</a>
+  <a href="02_M3119044_paragraf.html" class="bar-item button border-bottom">Paragraf</a>
+  <a href="03_M3119044_baris.html" class="bar-item button border-bottom">Baris Kosong</a>
+  <a href="04_M3119044_komentar.html" class="bar-item button border-bottom">Komentar</a>
+  <a href="05_M3119044_label.html" class="bar-item button border-bottom">Label Elemen</a>
+  <a href="06_M3119044_formatTeks.html" class="bar-item button border-bottom">Bold dan Italic</a>
+ </div>
+<div id="main">
+
+<div class="teal">
+  <button id="openNav" class="button teal xlarge" onclick="habib_open()">&#9776;</button>
+  <div class="container">
+    <h1>Membuat Form - Check Box</h1>
+  </div>
+</div>
+ 
+<div class="container">
+ <font  color="#009900" >
+
+<h2><strong>Mengenal Form HTML</strong></h2>   
+<p align="justify">
+     Form dalam desain web merupakan hal vital yang mutlak harus ada untuk membuat keinteraktifan dengan pengunjung. Dengan adanya form, Anda dapat membuat aplikasi buku tamu, online shopping, forum dll. Untuk keperluan interaksi dengan pengunjung, form tidak dapat berdiri sendiri. Form harus diintegrasikan dengan pemrograman web, misalnya javascript, PHP, ASP, Perl dll. Hal ini harus dilakukan karena input yang dimasukkan pengunjung situs ke dalam form harus diolah terlebih dahulu oleh program yang selanjutnya akan ditampilkan sebagai output dalam browser. Pada modul ini hanya akan dibahas bagaimana membuat elemen-elemen form, tidak sampai pada pemrograman webnya. Atribut method digunakan untuk menentukan tipe pengiriman data form. Terdapat 2 jenis pengiriman data, yaitu post dan get. Perbedaan keduanya hanyalah pada ditampilkannya data pada address bar atau tidak. Untuk post, data yang dikirim tidak ditampilkan pada address bar. Sedangkan get, data yang dikirim ditampilkan. Biasanya tipe pengiriman data lewat form adalah post karena untuk keamanan data. Sedangkan atribut action digunakan untuk menentukan URL script yang digunakan untuk memproses data input form.  
+</p> 
+
+  <h2><strong>Check Box</strong></h2>  </font>
+     <p>Seperti halnya radio button, check box juga digunakan untuk input yang berupa pilihan. Penampilannya pun hampir sama dengan radio button, namun perbedaannya adalah bahwa dalam check box memungkinkan user memilih item lebih dari satu. Tag untuk membuat check box hampir sama dengan radio button yaitu &lt;input type="checkbox" name="namakomponen" value="nilai" /&gt;</p>
+   
+ 
+  
+ <h2><font size="6" color="#009900" align="justify"><strong>Contoh Penggunaan</strong></h2>  </font>
+
+ <h2>Mata Kuliah yang disukai :</h2>
+
+  <form method="post" action="#">
+ 
+    <label class="kontener2">Desain Grafis
+      <input type="checkbox" name="matkulfav" value="dg" >
+      <span class="checkboxmark"></span>
+    </label>
+
+    <label class="kontener2">Desain Web
+      <input type="checkbox" name="matkulfav" value="dw" >
+      <span class="checkboxmark"></span>
+    </label>
+
+    <label class="kontener2">Mikrokontroller 2
+      <input type="checkbox" name="matkulfav" value="mk2" >
+      <span class="checkboxmark"></span>
+    </label>
+
+   <label class="kontener2">OOP
+      <input type="checkbox" name="matkulfav" value="oop" >
+      <span class="checkboxmark"></span>
+    </label>
+
+   <label class="kontener2">Database
+      <input type="checkbox" name="matkulfav" value="db" >
+      <span class="checkboxmark"></span>
+    </label>
+  <form>
+  
+   
+  <input type="submit" value="Kirim" class="myButton">
+
+
+<h2><font size="6" color="#009900" align="Left"><strong>Source Code</strong>  </font></h2>
+
+<!--WARNING Check Box! WARNING Check Box! WARNING Check Box! WARNING Check Box! WARNING Check Box! WARNING Check Box! WARNING Check Box! WARNING Check Box! WARNING Check Box! WARNING Check Box! WARNING Check Box! WARNING Check Box! WARNING Check Box! WARNING Check Box! WARNING Check Box! WARNING Check Box! WARNING Check Box! WARNING Check Box! WARNING Check Box! -->
+
+<textarea cols="1000" style="max-width:100%;" rows="10" readonly color="#008000">
+ 
+
+</textarea>
+<!--WARNING Check Box! WARNING Check Box! WARNING Check Box! WARNING Check Box! WARNING Check Box! WARNING Check Box! WARNING Check Box! WARNING Check Box! WARNING Check Box! WARNING Check Box! WARNING Check Box! WARNING Check Box! WARNING Check Box! WARNING Check Box! WARNING Check Box! WARNING Check Box! WARNING Check Box! WARNING Check Box! WARNING Check Box! -->
+
+<h2><font size="6" color="#009900" align="justify"><strong>Kesimpulan</strong></h2>  </font>
+
+
+
+<p align="justify">
+Tag untuk membuat check box hampir sama dengan radio button yaitu &lt;input type="checkbox" name="namakomponen" value="nilai" /&gt;.</p>
+
+<p align="center"><a href="../index.html" align="center" class="myButton"> Menu Utama</a>   </p>
+<div class="teal">
+  <div class="container">
+    <h1>Habib - M3119044</h1>
+  </div>
+</div>
+
+
+<style>
+  /* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #dbdbdb; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #009000; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #00b300; 
+}
+.myButton {
+  box-shadow:inset -2px -3px 0px -41px #00bd00;
+  background-color:#009000;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:26px;
+  font-weight:bold;
+  padding: 12px 1px;
+  text-decoration:none;
+  text-shadow:1px 1px 1px 1px #21d904;
+    position: static;
+      width: 240px;
+    height: 60px; border-radius:  ;   border: 256 96px; 
+
+  border: 0px solid black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 15px;
+  margin-left: 0px;
+  
+}
+.myButton:hover {
+  background-color:#00b800;
+}
+.myButton:active {
+  position:relative;
+  top:12px;
+}
+</style>
+<script>
+
+function habib_open() {
+  document.getElementById("main").style.marginLeft = "19%";
+  document.getElementById("mySidebar").style.width = "19%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function habib_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+
+</div>
+
+</body>
+</html>

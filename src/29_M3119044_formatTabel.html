@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html><head>    <link href="favicon.ico" rel="shortcut icon" type="image/ico"/></head>
+<title>Mengatur Format Tabel </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="habib.style.css">
+<body>
+
+<div class="sidebar bar-block card animate-left" style="display:block;" id="mySidebar">
+  <button class="bar-item button large"
+  onclick="habib_close()">Daftar Isi &times;</button>
+  <a href="../index.html" class="bar-item button border-bottom">Halaman Utama</a>
+ <a href="01_M3119044_heading.html" class="bar-item button border-bottom">Heading</a>
+  <a href="02_M3119044_paragraf.html" class="bar-item button border-bottom">Paragraf</a>
+  <a href="03_M3119044_baris.html" class="bar-item button border-bottom">Baris Kosong</a>
+  <a href="04_M3119044_komentar.html" class="bar-item button border-bottom">Komentar</a>
+  <a href="05_M3119044_label.html" class="bar-item button border-bottom">Label Elemen</a>
+  <a href="06_M3119044_formatTeks.html" class="bar-item button border-bottom">Bold dan Italic</a>
+  <a href="07_M3119044_monospace.html" class="bar-item button border-bottom">Monospaced Font</a>
+  <a href="08_M3119044_preformatteks.html" class="bar-item button border-bottom">Preformated Teks</a>
+  <a href="09_M3119044_kutipan.html" class="bar-item button border-bottom">Kutipan ( Quotes)</a>
+  <a href="10_M3119044_pangkat.html" class="bar-item button border-bottom">Superscript dan Subscript</a>
+  <a href="11_M3119044_perubahanteks.html" class="bar-item button border-bottom">Perubahan Teks</a>
+  <a href="12_M3119044_singkatan_akronim.html" class="bar-item button border-bottom">Singkatan</a>
+  <a href="13_M3119044_image.html" class="bar-item button border-bottom">Gambar</a>
+  <a href="14_M3119044_garisHorizontal.html" class="bar-item button border-bottom">Garis Horizontal</a>
+  <a href="15_M3119044_favicon.html" class="bar-item button border-bottom">Favicon</a>
+  <a href="16_M3119044_link1.html" class="bar-item button border-bottom">Hyperlink 1</a>
+  <a href="17_M3119044_link2.html" class="bar-item button border-bottom">Hyperlink 2</a>
+  <a href="18_M3119044_link3.html" class="bar-item button border-bottom">Hyperlink 3</a>
+  <a href="19_M3119044_link4.html" class="bar-item button border-bottom">Hyperlink 4</a>
+  <a href="20_M3119044_anchor.html" class="bar-item button border-bottom">Anchor</a>
+  <a href="21_M3119044_ShortcutLink.html" class="bar-item button border-bottom">Shortcut Link</a>
+  <a href="22_M3119044_UnorderList.html" class="bar-item button border-bottom">Unordered List</a>
+  <a href="23_M3119044_OrderedList.html" class="bar-item button border-bottom">Ordered List 1</a>
+  <a href="24_M3119044_OrderedList2.html" class="bar-item button border-bottom">Ordered List 2</a>
+  <a href="25_M3119044_listbersarang1.html" class="bar-item button border-bottom">List Bersarang 1</a>
+  <a href="26_M3119044_listbersarang2.html" class="bar-item button border-bottom">List Bersarang 2</a>
+  <a href="27_M3119044_urutanlist.html" class="bar-item button border-bottom">Urutan List</a></div>
+
+<div id="main">
+
+<div class="teal">
+  <button id="openNav" class="button teal xlarge" onclick="habib_open()">&#9776;</button>
+  <div class="container">
+    <h1>Mengatur Format Tabel</h1>
+  </div>
+</div>
+ 
+<div class="container">
+
+
+
+<p > <font size="5" color="#009900" align="justify">
+       Mengatur format tampilan tabel pada html.
+</p> 
+
+  <h2><strong>Mengenal Format Tabel HTML</strong></h2>    </font>
+    <p>Dalam penyusunan tabel, format tabel dapat di personalisasi menurut kebutuhannya.</p>
+    <p>Atribut untuk mengatur format tabel adalah :</p>
+   
+    <ul>
+      
+<li>Gunakan <font color="#009000"><code>&lt;table&gt;</font></code> elemen HTML untuk mendefinisikan tabel</li>
+  <li>Gunakan <font color="#009000"><code>&lt;tr&gt;</font></code> elemen HTML untuk mendefinisikan baris tabel</li>
+  <li>Gunakan <font color="#009000"><code>&lt;td&gt;</font></code> elemen HTML untuk mendefinisikan data tabel</li>
+  <li>Gunakan <font color="#009000"><code>&lt;th&gt;</font></code> elemen HTML untuk menentukan judul tabel</li>
+  <li>Gunakan <font color="#009000"><code>&lt;caption&gt;</font></code> elemen HTML untuk mendefinisikan keterangan tabel</li>
+  <li>Gunakan <font color="#009000"><code>border</font></code> properti CSS untuk mendefinisikan perbatasan</li>
+  <li>Gunakan <font color="#009000"><code>border-collapse</font></code> properti CSS untuk menutup batas sel</li>
+  <li>Gunakan <font color="#009000"><code>padding</font></code> properti CSS untuk menambahkan padding ke sel</li>
+  <li>Gunakan <font color="#009000"><code>text-align</font></code> properti CSS untuk menyelaraskan teks sel</li>
+  <li>Gunakan <font color="#009000"><code>border-spacing</font></code> properti CSS untuk mengatur jarak antar sel</li>
+  <li>Gunakan <font color="#009000"><code>colspan</font></code> atribut untuk membuat rentang sel banyak kolom</li>
+  <li>Gunakan <font color="#009000"><code>rowspan</font></code> atribut untuk membuat rentang sel banyak baris</li>
+  <li>Gunakan <font color="#009000"><code>id</font></code> atribut untuk secara unik mendefinisikan satu tabel</li>
+</ul>
+  
+ <h2><font size="6" color="#009900" align="justify"><strong>Contoh Penggunaan</strong></h2>  </font>
+ 
+      <h1><center>Daftar Pertemanan<center></h1>
+
+        <table border="2" align="center" width="100%" id="habtabel">
+
+        <tr bgcolor="#009000">
+        <th>Nama</th>
+        <th>Status</th>
+        <th>Ciri-ciri</th>
+        </tr>
+        <tr>
+        <td>Fandy Ahmad Irianto</td>
+        <td>Jones, belum pernah laku</td>
+        <td>Muka selalu memelas seperti orang susah</td>
+        </tr>
+        <tr>
+        <td >Ilham Ahmad Setiaji</td>
+        <td >Badboi, gonta ganti cewek terus</td>
+        <td>Suka berkata kotyor dan usil, tapi pinter</td>
+        </tr>
+        <tr>
+        <td >Dimas Abian Surtanto</td>
+        <td >Diem diem punya cewek banyak</td>
+        <td >Pejuang stan, ambis, mau pindah keknya</td>
+
+        </tr>
+        <tr>
+        <td >Diki Sofyana</td>
+        <td >Jomblo mandiri berdikari dan berteguh diri</td>
+        <td>Tidur di sembarang tempat, tidur tiba-tiba</td>
+        </tr>
+        </tbody>
+        </table>
+
+
+   
+    <br/>
+ 
+
+<h2><font size="6" color="#009900" align="Left"><strong>Source Code</strong>  </font></h2>
+
+<!--WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! -->
+
+<textarea cols="1000" style="max-width:100%;" rows="10" readonly color="#008000">
+<!DOCTYPE html>
+<html><head>    <link href="favicon.ico" rel="shortcut icon" type="image/ico"/></head>
+<title>Mengatur Format Tabel </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="habib.style.css">
+<body>
+
+<div class="sidebar bar-block card animate-left" style="display:block;" id="mySidebar">
+  <button class="bar-item button large"
+  onclick="habib_close()">Daftar Isi &times;</button>
+  <a href="../index.html" class="bar-item button border-bottom">Halaman Utama</a>
+ <a href="01_M3119044_heading.html" class="bar-item button border-bottom">Heading</a>
+  <a href="02_M3119044_paragraf.html" class="bar-item button border-bottom">Paragraf</a>
+  <a href="03_M3119044_baris.html" class="bar-item button border-bottom">Baris Kosong</a>
+  <a href="04_M3119044_komentar.html" class="bar-item button border-bottom">Komentar</a>
+  <a href="05_M3119044_label.html" class="bar-item button border-bottom">Label Elemen</a>
+  <a href="06_M3119044_formatTeks.html" class="bar-item button border-bottom">Bold dan Italic</a>
+  <a href="07_M3119044_monospace.html" class="bar-item button border-bottom">Monospaced Font</a>
+  <a href="08_M3119044_preformatteks.html" class="bar-item button border-bottom">Preformated Teks</a>
+  <a href="09_M3119044_kutipan.html" class="bar-item button border-bottom">Kutipan ( Quotes)</a>
+  <a href="10_M3119044_pangkat.html" class="bar-item button border-bottom">Superscript dan Subscript</a>
+  <a href="11_M3119044_perubahanteks.html" class="bar-item button border-bottom">Perubahan Teks</a>
+  <a href="12_M3119044_singkatan_akronim.html" class="bar-item button border-bottom">Singkatan</a>
+  <a href="13_M3119044_image.html" class="bar-item button border-bottom">Gambar</a>
+  <a href="14_M3119044_garisHorizontal.html" class="bar-item button border-bottom">Garis Horizontal</a>
+  <a href="15_M3119044_favicon.html" class="bar-item button border-bottom">Favicon</a>
+  <a href="16_M3119044_link1.html" class="bar-item button border-bottom">Hyperlink 1</a>
+  <a href="17_M3119044_link2.html" class="bar-item button border-bottom">Hyperlink 2</a>
+  <a href="18_M3119044_link3.html" class="bar-item button border-bottom">Hyperlink 3</a>
+  <a href="19_M3119044_link4.html" class="bar-item button border-bottom">Hyperlink 4</a>
+  <a href="20_M3119044_anchor.html" class="bar-item button border-bottom">Anchor</a>
+  <a href="21_M3119044_ShortcutLink.html" class="bar-item button border-bottom">Shortcut Link</a>
+  <a href="22_M3119044_UnorderList.html" class="bar-item button border-bottom">Unordered List</a>
+  <a href="23_M3119044_OrderedList.html" class="bar-item button border-bottom">Ordered List 1</a>
+  <a href="24_M3119044_OrderedList2.html" class="bar-item button border-bottom">Ordered List 2</a>
+  <a href="25_M3119044_listbersarang1.html" class="bar-item button border-bottom">List Bersarang 1</a>
+  <a href="26_M3119044_listbersarang2.html" class="bar-item button border-bottom">List Bersarang 2</a>
+  <a href="27_M3119044_urutanlist.html" class="bar-item button border-bottom">Urutan List</a></div>
+
+<div id="main">
+
+<div class="teal">
+  <button id="openNav" class="button teal xlarge" onclick="habib_open()">&#9776;</button>
+  <div class="container">
+    <h1>Mengatur Format Tabel</h1>
+  </div>
+</div>
+ 
+<div class="container">
+
+
+
+<p > <font size="5" color="#009900" align="justify">
+       Mengatur format tampilan tabel pada html.
+</p> 
+
+  <h2><strong>Mengenal Format Tabel HTML</strong></h2>    </font>
+    <p>Dalam penyusunan tabel, format tabel dapat di personalisasi menurut kebutuhannya.</p>
+    <p>Atribut untuk mengatur format tabel adalah :</p>
+   
+    <ul>
+      
+<li>Gunakan <font color="#009000"><code>&lt;table&gt;</font></code> elemen HTML untuk mendefinisikan tabel</li>
+  <li>Gunakan <font color="#009000"><code>&lt;tr&gt;</font></code> elemen HTML untuk mendefinisikan baris tabel</li>
+  <li>Gunakan <font color="#009000"><code>&lt;td&gt;</font></code> elemen HTML untuk mendefinisikan data tabel</li>
+  <li>Gunakan <font color="#009000"><code>&lt;th&gt;</font></code> elemen HTML untuk menentukan judul tabel</li>
+  <li>Gunakan <font color="#009000"><code>&lt;caption&gt;</font></code> elemen HTML untuk mendefinisikan keterangan tabel</li>
+  <li>Gunakan <font color="#009000"><code>border</font></code> properti CSS untuk mendefinisikan perbatasan</li>
+  <li>Gunakan <font color="#009000"><code>border-collapse</font></code> properti CSS untuk menutup batas sel</li>
+  <li>Gunakan <font color="#009000"><code>padding</font></code> properti CSS untuk menambahkan padding ke sel</li>
+  <li>Gunakan <font color="#009000"><code>text-align</font></code> properti CSS untuk menyelaraskan teks sel</li>
+  <li>Gunakan <font color="#009000"><code>border-spacing</font></code> properti CSS untuk mengatur jarak antar sel</li>
+  <li>Gunakan <font color="#009000"><code>colspan</font></code> atribut untuk membuat rentang sel banyak kolom</li>
+  <li>Gunakan <font color="#009000"><code>rowspan</font></code> atribut untuk membuat rentang sel banyak baris</li>
+  <li>Gunakan <font color="#009000"><code>id</font></code> atribut untuk secara unik mendefinisikan satu tabel</li>
+</ul>
+  
+ <h2><font size="6" color="#009900" align="justify"><strong>Contoh Penggunaan</strong></h2>  </font>
+ 
+      <h1><center>Daftar Pertemanan<center></h1>
+
+        <table border="2" align="center" width="100%" id="habtabel">
+
+        <tr bgcolor="#009000">
+        <th>Nama</th>
+        <th>Status</th>
+        <th>Ciri-ciri</th>
+        </tr>
+        <tr>
+        <td>Fandy Ahmad Irianto</td>
+        <td>Jones, belum pernah laku</td>
+        <td>Muka selalu memelas seperti orang susah</td>
+        </tr>
+        <tr>
+        <td >Ilham Ahmad Setiaji</td>
+        <td >Fuccboi, gonta ganti cewek terus</td>
+        <td>Suka berkata kotyor dan usil, tapi pinter</td>
+        </tr>
+        <tr>
+        <td >Dimas Abian Surtanto</td>
+        <td >Diem diem punya cewek banyak</td>
+        <td >Pejuang stan, ambis, mau pindah keknya</td>
+
+        </tr>
+        <tr>
+        <td >Diki Sofyana</td>
+        <td >Jomblo mandiri berdikari dan berteguh diri</td>
+        <td>Tidur di sembarang tempat, tidur tiba-tiba</td>
+        </tr>
+        </tbody>
+        </table>
+
+
+   
+    <br/>
+ 
+
+<h2><font size="6" color="#009900" align="Left"><strong>Source Code</strong>  </font></h2>
+ 
+
+<h2><font size="6" color="#009900" align="justify"><strong>Kesimpulan</strong></h2>  </font>
+
+
+
+<p align="justify">
+Untuk Mengatur Format Tabel yang perlu di perhatikan adalah pengaturan Baris, Kolom, Sel, dan Garis. </p>
+
+<p align="center"><a href="../index.html" align="center" class="myButton"> Menu Utama</a>   </p>
+<div class="teal">
+  <div class="container">
+    <h1>Habib - M3119044</h1>
+  </div>
+</div>
+
+
+<style>
+  /* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #dbdbdb; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #009000; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #00b300; 
+}
+.myButton {
+  box-shadow:inset -2px -3px 0px -41px #00bd00;
+  background-color:#009000;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:26px;
+  font-weight:bold;
+  padding: 12px 1px;
+  text-decoration:none;
+  text-shadow:1px 1px 1px 1px #21d904;
+    position: static;
+      width: 240px;
+    height: 60px; border-radius:  ;   border: 256 96px; 
+
+  border: 0px solid black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 15px;
+  margin-left: 0px;
+  
+}
+.myButton:hover {
+  background-color:#00b800;
+}
+.myButton:active {
+  position:relative;
+  top:12px;
+}
+</style>
+<script>
+
+function habib_open() {
+  document.getElementById("main").style.marginLeft = "19%";
+  document.getElementById("mySidebar").style.width = "19%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function habib_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+
+</div>
+
+</body>
+</html>
+
+</textarea>
+<!--WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! WARNING TEXT AREA! -->
+
+<h2><font size="6" color="#009900" align="justify"><strong>Kesimpulan</strong></h2>  </font>
+
+
+
+<p align="justify">
+Untuk Mengatur Format Tabel yang perlu di perhatikan adalah pengaturan Baris, Kolom, Sel, dan Garis. </p>
+
+<p align="center"><a href="../index.html" align="center" class="myButton"> Menu Utama</a>   </p>
+<div class="teal">
+  <div class="container">
+    <h1>Habib - M3119044</h1>
+  </div>
+</div>
+
+
+<style>
+  /* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #dbdbdb; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #009000; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #00b300; 
+}
+.myButton {
+  box-shadow:inset -2px -3px 0px -41px #00bd00;
+  background-color:#009000;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:26px;
+  font-weight:bold;
+  padding: 12px 1px;
+  text-decoration:none;
+  text-shadow:1px 1px 1px 1px #21d904;
+    position: static;
+      width: 240px;
+    height: 60px; border-radius:  ;   border: 256 96px; 
+
+  border: 0px solid black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 15px;
+  margin-left: 0px;
+  
+}
+.myButton:hover {
+  background-color:#00b800;
+}
+.myButton:active {
+  position:relative;
+  top:12px;
+}
+</style>
+<script>
+
+function habib_open() {
+  document.getElementById("main").style.marginLeft = "19%";
+  document.getElementById("mySidebar").style.width = "19%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function habib_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+
+</div>
+
+</body>
+</html>
